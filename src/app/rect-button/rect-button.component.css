@@ -1,0 +1,23 @@
+div {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.red.inactive {
+  background-color: #FF1177;
+}
+
+.red.active {
+  background-color: #ff55AA; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+}
+
+.inactive {
+  background-color: #228DFF;
+}
+
+.active {
+  background-color: #66CFFF;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+}
