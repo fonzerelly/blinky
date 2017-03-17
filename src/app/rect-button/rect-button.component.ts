@@ -1,5 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+export enum RectButtonColor {
+  RED = 1,
+  BLUE,
+  GREEN,
+  YELLOW
+}
+
 @Component({
   selector: 'app-rect-button',
   templateUrl: './rect-button.component.html',
@@ -7,16 +14,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RectButtonComponent implements OnInit {
 
-  @Input() color: string;
   private pressed: boolean;
   setPressure (isPressed: boolean) {
     this.pressed = isPressed;
   }
 
+  @Input() color: RectButtonColor;
+
   public renderState () {
+    const color = this.color;
     return {
       active: this.pressed,
-      inactive: !this.pressed
+      inactive: !this.pressed,
+      blue: color === RectButtonColor.BLUE,
+      red: color === RectButtonColor.RED,
+      green: color === RectButtonColor.GREEN,
+      yellow: color === RectButtonColor.YELLOW
     };
   }
 
@@ -24,8 +37,8 @@ export class RectButtonComponent implements OnInit {
 
   ngOnInit() {
     this.setPressure(false);
+    if (this.color === undefined) {
+      throw new Error ('Attribute Color is mandatory!');
+    }
   }
-
-
-
 }

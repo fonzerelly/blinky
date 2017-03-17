@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { RectButtonComponent } from './rect-button/rect-button.component';
+import { Component, ViewChild} from '@angular/core';
+import { RectButtonComponent, RectButtonColor } from './rect-button/rect-button.component';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,13 @@ import { RectButtonComponent } from './rect-button/rect-button.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(RectButtonComponent) button: RectButtonComponent
-  title = 'app works!';
+  @ViewChild(RectButtonComponent) button: RectButtonComponent;
+
+  red = RectButtonColor.RED;
+  blue = RectButtonColor.BLUE;
+  green = RectButtonColor.GREEN;
+  yellow = RectButtonColor.YELLOW;
+
   setActive = () => {
      this.button.setPressure(true);
   }
