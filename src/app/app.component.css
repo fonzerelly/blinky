@@ -1,0 +1,27 @@
+.pad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 260px;
+    justify-content: space-around;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -180px;
+    background-color: black;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+    border: 5px solid #AAAAAA;
+    box-shadow: 5px 5px 0 black, -5px -5px 0 black, -5px 5px 0 black, 5px -5px 0 black;
+}
+
+.title {
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 5em;
+    position: fixed;
+    left: 50%;
+    margin-left: -1em;
+}

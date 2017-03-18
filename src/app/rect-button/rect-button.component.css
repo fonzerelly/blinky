@@ -4,8 +4,13 @@ div {
   border-radius: 10px;
 }
 
+.active {
+  transform: translate(0, 5px);
+}
+
 .red.inactive {
   background-color: #FF1177;
+  box-shadow: 1px 5px 0 #CC0033;
 }
 
 .red.active {
@@ -15,6 +20,7 @@ div {
 
 .blue.inactive {
   background-color: #228DFF;
+  box-shadow: 1px 5px 0 #006BDD;
 }
 
 .blue.active {
@@ -24,6 +30,7 @@ div {
 
 .green.inactive {
   background-color: #B6FF00;
+  box-shadow: 1px 5px 0 #94DD00;
 }
 
 .green.active {
@@ -33,6 +40,7 @@ div {
 
 .yellow.inactive {
   background-color: #FFDD1B;
+  box-shadow: 1px 5px 0 #DDBB09
 }
 
 .yellow.active {

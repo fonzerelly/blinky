@@ -1,5 +1,8 @@
  <div
-    [ngClass]="renderState()" 
-    (mousedown)="setPressure(true)" 
+    [ngClass]="renderState()"
+    (mousedown)="setPressure(true)"
+    (touchstart)="setPressure(true)"
     (mouseup)="setPressure(false)"
+    (mouseout)="setPressure(false)"
+    (touchend)="setPressure(false)"
   ></div>
